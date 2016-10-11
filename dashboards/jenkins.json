@@ -1,0 +1,86 @@
+{
+
+    "title": "Jenkins",
+    "titleVisible": true,
+
+    "description": "Jenkins Dashboard",
+
+    "layout": {
+        "gridSize": { "columns": 10, "rows": 12 },
+        "customJS": [],
+        "widgets": [{
+                "enabled": true,
+                "row": 1,
+                "col": 1,
+                "width": 2,
+                "height": 4,
+                "widget": "jenkins-jobs",
+                "job": "jenkins-jobs",
+                "config": "jenkins-mono-components"
+            },
+            {
+                "enabled": true,
+                "row": 1,
+                "col": 2,
+                "width": 2,
+                "height": 4,
+                "widget": "jenkins-jobs",
+                "job": "jenkins-jobs",
+                "config": "jenkins-mono-experiments"
+            },
+            {
+                "enabled": true,
+                "row": 1,
+                "col": 3,
+                "width": 2,
+                "height": 14,
+                "widget": "jenkins-queue",
+                "job": "jenkins-queue",
+                "config": "jenkins-mono-queue"
+            },
+            {
+                "enabled": true,
+                "row": 1,
+                "col": 4,
+                "width": 2,
+                "height": 14,
+                "widget": "jenkins-build",
+                "job": "jenkins-build",
+                "config": "jenkins-mono-build"
+            },
+            {
+                "enabled": true,
+                "row": 1,
+                "col": 5,
+                "width": 2,
+                "height": 14,
+                "widget": "jenkins-buildqueue",
+                "job": "jenkins-buildqueue",
+                "config": "jenkins-mono-buildqueue"
+            }
+        ]
+    },
+
+    "config": {
+        "jenkins-mono-components": {
+            "interval": 10000,
+            "endpoint": "https://jenkins.mono-project.com/view/Components/"
+        },
+        "jenkins-mono-experiments": {
+            "interval": 10000,
+            "endpoint": "https://jenkins.mono-project.com/view/Experiments/"
+        },
+        "jenkins-mono-queue": {
+            "interval": 10000,
+            "endpoint": "https://jenkins.mono-project.com/"
+        },
+        "jenkins-mono-build": {
+            "interval": 10000,
+            "endpoint": "https://jenkins.mono-project.com/"
+        },
+        "jenkins-mono-buildqueue": {
+            "interval": 10000,
+            "endpoint": "https://jenkins.mono-project.com/"
+        }
+    }
+}

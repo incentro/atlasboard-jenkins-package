@@ -1,0 +1,21 @@
+{
+    "author": "Incentro",
+    "name": "atlasboard-jenkins-package",
+    "description": "Jenkins package for Atlasboard",
+    "version": "0.0.1",
+    "homepage": "https://github.com/incentro/atlasboard-jenkins-package",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:incentro/atlasboard-jenkins-package.git"
+    },
+    "dependencies": {
+        "memory-cache": "0.0.5"
+    },
+    "engines": {
+        "atlasboard": ">=0.5.6"
+    },
+    "contributors": [{
+        "name": "Thijs Borst",
+        "email": "thijs.borst@incentro.com"
+    }]
+}

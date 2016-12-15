@@ -11,10 +11,10 @@ module.exports = function(config, dependencies, job_callback) {
         url: config.endpoint + '/api/json'
     };
 
-    if (config.credentials) {
+    if (config.globalAuth && config.globalAuth[credentials]) {
         options.headers = {
-            "authorization": "Basic " + new Buffer(config.globalAuth[authName].username + ":" +
-                config.globalAuth[authName].password).toString("base64")
+            "authorization": "Basic " + new Buffer(config.globalAuth[credentials].username + ":" +
+                config.globalAuth[credentials].password).toString("base64")
         };
     }
 

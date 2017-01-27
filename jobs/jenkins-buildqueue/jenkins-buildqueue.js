@@ -37,7 +37,7 @@ module.exports = function(config, dependencies, job_callback) {
                 var job = null;
                 for (var i = result.jobs.length - 1; i >= 0; i--) {
                     job = result.jobs[i];
-                    if (!(job.color.indexOf("_anime") >= 0 || job.inQueue)) {
+                    if (!(job.color && job.color.indexOf("_anime") >= 0 || job.inQueue)) {
                         result.jobs.splice(i, 1);
                     }
                 }

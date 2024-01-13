@@ -9,7 +9,7 @@
         "url": "git@github.com:incentro/atlasboard-jenkins-package.git"
     },
     "dependencies": {
-        "memory-cache": "0.0.5"
+        "memory-cache": "0.2.0"
     },
     "engines": {
         "atlasboard": ">=0.5.6"
